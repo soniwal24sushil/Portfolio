@@ -1,0 +1,57 @@
+#edu-img {
+    width: 75%;
+}
+
+.box {
+    margin: 3rem 1rem;
+    gap: 2rem;
+}
+
+.college-logo {
+    padding: 0 1rem;
+    border-radius: 50%;
+}
+
+.college-info {
+    background: #0e6aa896;
+    border-radius: 15px;
+    box-shadow: rgb(140, 141, 143) 5px 5px 5px 0px;
+    max-width: 75vw;
+}
+
+.row-1 {
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.row-2 {
+    padding: 0 1rem;
+}
+
+.row-3 {
+    margin-top: 0.75rem;
+    padding: 1rem 1rem;
+    background-color: #ffffffc7;
+}
+
+@media screen and (max-width: 991px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .college-logo {
+        width: 75%;
+    }
+
+    .college-info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row-1 {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+    }
+}
