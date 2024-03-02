@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushil Soniwal - Consistent Coder!</title>
+
+    <!-- ! CSS Reset -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- ! Home CSS -->
+    <link rel="stylesheet" href="CSS/home.css">
+</head>
+
+<body>
+
+    <div id="Wrapper">
+
+        <!-- ^ Navbar -->
+        <nav id="Home" class="flex navbar-sticky">
+            <div class="nav-logo">
+                <img src="IMG/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li>
+                        <a href="#Home" class="hover-link nav-text">Home</a>
+                    </li>
+                    <li>
+                        <a href="#About" class="hover-link nav-text">About</a>
+                    </li>
+                    <li>
+                        <a href="#Projects" class="hover-link nav-text">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#Experience" class="hover-link nav-text">Experience</a>
+                    </li>
+                    <li>
+                        <a href="#Education" class="hover-link nav-text">Education</a>
+                    </li>
+                    <li>
+                        <a href="#Contact" class="hover-link nav-text">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <a href="#" class="nav-toggle hover-link nav-text" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+
+        <!-- ^ Header -->
+        <section>
+            <header class="flex">
+                <div class="header-left">
+                    <h1 class="main-text">Hi, I'm <span id="element"></span></h1>
+                    <p class="para-text">
+                        Consistent Coder 🚀 | Aspiring MERN Developer | GSSOC'23
+                        Participant 🌟 LeetCode: 2.5🌟 | CodingNinjas Champion | Azure
+                        Intern at Microsoft 💻 1M+ Content Views | ECE'24 | Open to
+                        Opportunities
+                    </p>
+
+                    <button class="botao">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="mysvg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Interface / Download">
+                                    <path id="Vector" d="M6 21H18M12 3V17M12 17L17 12M12 17L7 12" stroke="#f1f1f1"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="texto para-text">Resume</span>
+                    </button>
+                </div>
+
+                <div class="header-right">
+                    <img src="IMG/Hero-img.png" alt="">
+                </div>
+            </header>
+        </section>
+    </div>
+
+    <!-- ^Fontawesome -->
+    <script src="https://kit.fontawesome.com/f65c02f848.js" crossorigin="anonymous"></script>
+
+    <!-- ^ Navbar -->
+    <script>
+        const toggleButton = document.getElementById('nav-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggleButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        })
+
+    </script>
+
+    <!-- ^ Header -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed("#element", {
+            strings: ["Sushil Soniwal!"],
+            typeSpeed: 50, // Typing speed in milliseconds
+            backSpeed: 30, // Backspacing speed in milliseconds
+            loop: true, // Enable looping
+            loopCount: Infinity, // Number of loops, set to Infinity for infinite loop
+            backDelay: 3000,
+        });
+    </script>
+
+</body>
+
+</html>
