@@ -1,0 +1,189 @@
+.project-section {
+    background-color: rgb(231, 231, 231);
+}
+
+.project-container {
+    flex-direction: column;
+    gap: 8rem;
+    padding: 3rem 0;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.project-card {
+    width: 90%;
+    height: 35rem;
+    position: relative;
+    z-index: 0;
+    box-shadow: 0rem 0rem 2.5rem #1f1f1f;
+}
+
+.project-card::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f9a;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(45deg, #343d68, #343d68be, #343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.project-card:hover.project-card::before {
+    transition: transform 0.4s;
+    transform: scaleX(1);
+}
+
+.project-card:hover .project-content {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.project-content {
+    position: absolute;
+    bottom: 20%;
+    z-index: 5;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+    padding: 2em;
+    transition: transform 1s linear ease-in-out;
+    opacity: 0;
+}
+
+.project-content-left {
+    left: 10%;
+}
+
+.project-content-right {
+    right: 10%;
+}
+
+#project-1 {
+    background-image: url(../IMG/Zerodha.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#project-2 {
+    background-image: url(../IMG/Netflix.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-self: flex-end;
+}
+
+#project-3 {
+    background-image: url(../IMG/Portfolio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-skill-container {
+    width: 60%;
+    gap: 0.5rem;
+}
+
+.project-skill-container>img {
+    width: 2.5rem;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+
+.project-heading>h1 {
+    font-size: 3.125rem;
+    font-weight: bold;
+    line-height: 3rem;
+    color: whitesmoke;
+}
+
+.project-description {
+    width: 70%;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.project-description>p {
+    color: whitesmoke;
+}
+
+.project-links {
+    gap: 1rem;
+}
+
+.Btn {
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.svgIcon {
+    transition-duration: 0.3s;
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.text {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.Btn:hover {
+    width: 110px;
+    transition-duration: 0.5s;
+    border-radius: 30px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+
+.Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: 0.4s;
+}
+
+.demo-btn {
+    background-color: rgba(89, 25, 209, 0.877);
+}
+
+.demo {
+    height: 15px;
+}
+
+@media screen and (max-width: 425px) {
+    .project-content {
+        bottom: 5%;
+        padding: 0;
+    }
+}
